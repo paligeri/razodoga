@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 14pt;
+    font-family: 'Nunito', sans-serif;
+    scroll-behavior: smooth;
+    background-color: var(--light);
+}
+
+:root{
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #E53935;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #32CD32;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #ffffff;
+    --gray: #6c757d;
+    --gray-light: #E9E9E9;
+    --gray-dark: #343a40;
+    --primary: #ce0a06;
+    --secondary: #3b5998;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #ce0a06;
+    --light: #f7f6f6;
+    --dark: #343a40;
+    --black: #17181a;
+}
+
+.main{
+    /* min-w 300 prefferred 80 viewport max-w 1210 m-a*/
+    width: clamp(300px, 80vw, 1210px);
+    margin: auto;
+}
+
+a{
+    color: var(--text);
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    width: 80%;
+    height: 65px;
+    padding-left: 10%;
+    padding-right: 10%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--white);
+    margin-bottom: 3rem;
+}
+nav a:hover{
+    font-size: 16pt;
+    color: var(--highlight);
+}
+
+.mx-10-vw{
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.w-15vw{
+    width: 15vw;
+}
+.w-30vw{
+    width: 30vw;
+}
+
+.w-100p{
+    width: 100%;
+}
+
+.mb-2{
+    margin-bottom: 2rem;
+}
+.mb-1{
+    margin-bottom: 1rem;
+}
+.m-a{
+    /* margin-auto*/
+    margin: auto;
+}
+
+.m-r-1vw{
+    margin-right: 1vw;
+}
+
+.flex{
+    /* display flex */
+    display: flex;
+}
+
+.flex-col{
+    /* flex-direction col*/
+    flex-direction: column;
+}
+
+.flex-row{
+    /* flex-direction row*/
+    flex-direction: row;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.hirdetes-list-item img{
+    max-width: 15vw;
+    max-height: 150px;
+    border-radius: 4px;
+}
+
+.hirdetes-list-item{
+    border: 1px solid var(--gray-light);
+    border-radius: 4px;
+    overflow-wrap: break-word;
+    margin-bottom: 30px;
+    padding: 2vw;
+}
+
+.hirdetes-form textarea{
+    resize: vertical;
+    height: 10rem;
+}
+
+.form-text{
+    width: clamp(100px, 20vw, 300px);
+    text-align: right;
+    margin-right: clamp(10px, 5vw, 30px);
+}
+
+.form-input, .form-input input{
+    width: clamp(190px, 55vw, 880px);
+    height: 30px;
+    padding: 0;
+    border: 1px solid var(--dark);
+    border-radius: 5px;
+    color: var(--dark);
+    font-size: 11pt;
+}
+
+.form-input::placeholder{
+    color: var(--dark);
+    padding-left: 6px;
+}
+
+
+.form-submit{
+    border: var(--indigo) 2px solid;
+    border-radius: 5px;
+    height: 3rem;
+    font-size: 14pt;
+    font-weight: bold;
+    color: var(--light);
+    width: 100%;
+    margin: auto;
+    background-color: var(--indigo);
+    cursor: pointer;
+}
+
+.form-submit:hover{
+    border: var(--green) 2px solid;
+    border-radius: 5px;
+    height: 3rem;
+    font-size: 14pt;
+    font-weight: bold;
+    color: var(--dark);
+    background-color: var(--green);
+}
+
+.input-control input:focus{
+    outline: 0;
+}
+
+.input-control .success input{
+    border: var(--success);
+}
+
+.input-control .error input{
+    border: var(--red);
+}
+
+input[type="file"]{
+    display: none;
+}
+
+.kep-button {
+    padding: 5px 5vw;  /* Top+Bottom ; Left-Right */
+    border: var(--indigo) 2px solid;
+    border-radius: 5px;
+    height: 30px;
+    font-size: 12pt;
+    font-weight: bold;
+    color: var(--dark);
+    background-color: var(--light);
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.kep-button:hover{
+    background-color: var(--indigo);
+    color: var(--light);
+}
+
+.telepules{
+    color: var(--gray-light);
+    font-size: 14px;
+}
+
+.sml-icon{
+    height: 18px;
+    width: 18px;
+}
+
+.telepules img{
+    height: 16px;
+    width: 16px;
+    margin-right:  5px;
+}
+
+.hirdetes-list-cim{
+    color: var(--indigo);
+    font-weight: bold;
+    font-size: 18pt;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.hirdetes-list-ar{
+    color: var(--dark);
+    font-weight: bolder;
+}
+
+.text-center{
+    text-align: center;
+}
+
+#kepecske{
+    max-width: 100%;
+    max-height: 500px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.img-arrow{
+    width: clamp(120px, 15vw, 250px);
+    height: 30px;
+    text-align: center;
+    background-color: var(--gray);
+    border-radius: 5px;
+    border: none;
+    color: var(--light);
+    font-size: 14pt;
+    cursor: pointer;
+}
+
+.img-arrow:hover{
+    background-color: var(--dark);
+}

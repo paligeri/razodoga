@@ -1,0 +1,1 @@
+<h2 style="text-align: center; margin-top: 40vh;">Kapcsolat: <a href="mailto:palastigergoo@gmail.com">palastigergoo@gmail.com</a></h2>
